@@ -1,0 +1,40 @@
+body {
+  padding: 8rem;
+}
+
+.page {
+  height: 500px;
+  visibility: visible;
+  transform-style: preserve-3d;
+  transition-duration: 2s;
+  transform-origin: right;
+  position: absolute;
+  right: 50%;
+}
+
+.page div {
+  width: 50px;
+  height: 500px;
+  position: absolute;
+  right: calc(50px - 1px);
+  transform-style: preserve-3d;
+  transform-origin: 100% 100%;
+  background-color: rgb(221, 223, 209);
+}
+
+.flip {
+  transform: perspective(1500px) rotatey(180deg);
+}
+
+.flip div > div {
+  animation: flip 4s ease;
+}
+
+@keyframes flip {
+  25% {
+    transform: rotateY(-8deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
