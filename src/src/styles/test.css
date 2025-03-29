@@ -13,10 +13,10 @@ body {
 }
 
 .page div {
-  width: 50px;
+  width: 15px;
   height: 500px;
   position: absolute;
-  right: calc(50px - 1px);
+  right: 15px;
   transform-style: preserve-3d;
   transform-origin: 100% 100%;
   background-color: rgb(221, 223, 209);
@@ -28,11 +28,12 @@ body {
 
 .flip div > div {
   animation: flip 4s ease;
+  transform-origin: right;
 }
 
 @keyframes flip {
   25% {
-    transform: rotateY(-8deg);
+    transform: rotateY(-6deg);
   }
   100% {
     transform: rotateY(0deg);

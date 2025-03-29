@@ -47,9 +47,7 @@ export const useFlick = (content: string) => {
     flick.current = true;
 
     if (target.classList.contains("flip-active-right")) {
-      setTimeout(() => {
-        target.style.zIndex = (contents.length - index).toString();
-      }, 500);
+      target.style.zIndex = (contents.length - index).toString();
 
       target.classList.add("flip-deactive-right");
       target.classList.remove("flip-active-right");
@@ -58,9 +56,7 @@ export const useFlick = (content: string) => {
 
       pageCount.current = index;
     } else {
-      setTimeout(() => {
-        target.style.zIndex = (index + 1).toString();
-      }, 500);
+      target.style.zIndex = (index + 1).toString();
 
       target.classList.add("flip-active-right");
       target.classList.remove("flip-deactive-right");

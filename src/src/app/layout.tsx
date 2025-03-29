@@ -2,7 +2,6 @@ import "@/styles/globals.css";
 import "@/styles/new-book.css"
 
 import type { Metadata } from 'next'
- 
 export const metadata: Metadata = {
   title: 'Home',
   description: 'Welcome to Next.js',
