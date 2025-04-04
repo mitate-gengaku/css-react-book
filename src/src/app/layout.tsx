@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
 import "@/styles/new-book.css"
+import "@/styles/test.css"
 
 import type { Metadata } from 'next'
 export const metadata: Metadata = {

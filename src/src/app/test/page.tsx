@@ -1,6 +1,5 @@
 "use client"
 
-// import "@/styles/test.css"
 import { useRef } from "react"
 
 const Test = () => {
